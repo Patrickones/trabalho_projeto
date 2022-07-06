@@ -38,7 +38,7 @@
                                 <a class="btn btn-primary" href="/clientes-edit/{{$clientes->id}}">Editar</a>
                                 <a class="btn btn-danger" href="/clientes-delete/{{$clientes->id}}">Excluir</a>
                             </td>
-                            <td>{{$clientes->codigo}}</td>
+                            <td>{{$clientes->id}}</td>
                             <td>{{$clientes->nome}}</td>
                             <td>{{$clientes->cpf}}</td>
                             <td>{{$clientes->uf}}</td>

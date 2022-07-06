@@ -12,7 +12,7 @@
                 <button type="button" class="btn btn-block btn-outline-primary mb-3">Novo</button>
             </a>
 
-            <table id="example1" class="table table-bordered table-striped">
+            <table id="produtos" class="table table-bordered table-striped">
                 <thead>
                     <tr>
                         <th>Ações</th>
@@ -23,48 +23,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td></td>
-                        <td>1</td>
-                        <td>radicional produto brasileiro à base de amendoim, a Paçoquita é líder nacional no seu segmento e conquista consumidores e clientes a cada dia. Graças ao seu diferenciado sabor e um rigoroso controle de qualidade e de matéria-prima, é um produto apreciado por consumidores de todas as idades há mais de 25 anos.</td>
-                        <td>55585</td>
-                        <td>Alimento</td>
-                    </tr>
+                   
 
-                    <tr>
-                        <td></td>
-                        <td>1</td>
-                        <td>radicional produto brasileiro à base de amendoim, a Paçoquita é líder nacional no seu segmento e conquista consumidores e clientes a cada dia. Graças ao seu diferenciado sabor e um rigoroso controle de qualidade e de matéria-prima, é um produto apreciado por consumidores de todas as idades há mais de 25 anos.</td>
-                        <td>55585</td>
-                        <td>Alimento</td>
-                    </tr>
-
-
-                    <tr>
-                        <td></td>
-                        <td>1</td>
-                        <td>radicional produto brasileiro à base de amendoim, a Paçoquita é líder nacional no seu segmento e conquista consumidores e clientes a cada dia. Graças ao seu diferenciado sabor e um rigoroso controle de qualidade e de matéria-prima, é um produto apreciado por consumidores de todas as idades há mais de 25 anos.</td>
-                        <td>55585</td>
-                        <td>Alimento</td>
-                    </tr>
-
-
-                    <tr>
-                        <td></td>
-                        <td>1</td>
-                        <td>radicional produto brasileiro à base de amendoim, a Paçoquita é líder nacional no seu segmento e conquista consumidores e clientes a cada dia. Graças ao seu diferenciado sabor e um rigoroso controle de qualidade e de matéria-prima, é um produto apreciado por consumidores de todas as idades há mais de 25 anos.</td>
-                        <td>55585</td>
-                        <td>Alimento</td>
-                    </tr>
-
-
-                    <tr>
-                        <td></td>
-                        <td>1</td>
-                        <td>radicional produto brasileiro à base de amendoim, a Paçoquita é líder nacional no seu segmento e conquista consumidores e clientes a cada dia. Graças ao seu diferenciado sabor e um rigoroso controle de qualidade e de matéria-prima, é um produto apreciado por consumidores de todas as idades há mais de 25 anos.</td>
-                        <td>55585</td>
-                        <td>Alimento</td>
-                    </tr>
 
 
 
