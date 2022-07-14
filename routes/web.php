@@ -90,6 +90,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/pedidos-save/{id?}', [PedidosController::class, 'save']);
     Route::get('/pedidos-delete/{id}', [PedidosController::class, 'delete']);
 
+    Route::get('/usuarios-edit/{id}', [UsuariosController::class, 'edit']);
+    Route::post('/usuarios-save/{id?}', [UsuariosController::class, 'save']);
+    Route::get('/usuarios-delete/{id}', [UsuariosController::class, 'delete']);
     
 
 });
