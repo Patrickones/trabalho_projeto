@@ -16,14 +16,28 @@
                 <thead>
                     <tr>
                         <th>Ações</th>
-                        <th>Codigo</th>
-                        <th>Descrição</th>
-                        <th>Código interno</th>
-                        <th>Categoria</th>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Estoque</th>
+                        <th>Marca</th>
+
                     </tr>
                 </thead>
                 <tbody>
-                   
+                    @foreach ($lista as $produto)
+                        <tr>
+                            <td>
+                                <a class="btn btn-primary" href="/produtos-edit/{{$produto->id}}">Editar</a>
+                                <a class="btn btn-danger" href="/produtos-delete/{{$produto->id}}">Excluir</a>
+                            </td>
+                            <td>{{$produto->id}}</td>
+                            <td>{{$produto->nome}}</td>
+                            <td>{{$produto->estoque}}</td>
+                            <td>{{$produto->marca}}</td>
+                            
+                
+                        </tr>
+                    @endforeach
 
 
 

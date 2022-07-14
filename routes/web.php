@@ -4,6 +4,7 @@ use App\Http\Controllers\CategoriasController;
 use App\Http\Controllers\ClientesController;
 use App\Http\Controllers\FornecedoresController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PedidosController;
 use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\ProdutosController;
 use App\Http\Controllers\StatusPedController;
@@ -47,9 +48,18 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/vendedores-add', [VendedoresController::class,'add']);
     Route::get('/vendedores', [VendedoresController::class,'lista']);
 
-    Route::get('/produtos-add', [ProdutosController::class,'add']);
-    Route::post('/produtos-save', [ProdutosController::class,'save']);
+   
     Route::get('/produtos', [ProdutosController::class,'lista']);
+    Route::get('/produtos-add', [ProdutosController::class,'add']);
+
+    Route::get('/statusped', [StatusPedController::class,'lista']);
+    Route::get('/statusped-add', [StatusPedController::class,'add']);
+
+    Route::get('/categorias', [CategoriasController::class,'lista']);
+    Route::get('/categorias-add', [CategoriasController::class,'add']);
+
+    Route::get('/pedidos', [PedidosController::class,'lista']);
+    Route::get('/pedidos-add', [PedidosController::class,'add']);
     
 
     Route::get('/fornecedores-edit/{id}', [FornecedoresController::class, 'edit']);
@@ -71,7 +81,16 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/categorias-edit/{id}', [CategoriasController::class, 'edit']);
     Route::post('/categorias-save/{id?}', [CategoriasController::class, 'save']);
     Route::get('/categorias-delete/{id}', [CategoriasController::class, 'delete']);
-    Route::get('/categorias', [CategoriasController::class,'lista']);
+
+    Route::get('/produtos-edit/{id}', [ProdutosController::class, 'edit']);
+    Route::post('/produtos-save/{id?}', [ProdutosController::class, 'save']);
+    Route::get('/produtos-delete/{id}', [ProdutosController::class, 'delete']);
+    
+    Route::get('/pedidos-edit/{id}', [PedidosController::class, 'edit']);
+    Route::post('/pedidos-save/{id?}', [PedidosController::class, 'save']);
+    Route::get('/pedidos-delete/{id}', [PedidosController::class, 'delete']);
+
+    
 
 });
 

@@ -21,10 +21,10 @@ class ProdutosController extends Controller
     }
 
     public function edit($id) {
-        $Produto = Produtos::find($id);
+        $produto = Produtos::find($id);
         $categorias = Categorias::all();
         $fornecedores = Fornecedores::all();
-        return view('Produtos-form', ['Produto' => $Produto, 'categorias' => $categorias, 'fornecedores' => $fornecedores]);
+        return view('Produtos-form', ['produto' => $produto, 'categorias' => $categorias, 'fornecedores' => $fornecedores]);
     }
 
     public function save(Request $request, $id = null) {
