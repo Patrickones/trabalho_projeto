@@ -37,7 +37,7 @@ class VendedoresController extends Controller
     }
 
     public function delete($id) {
-        $excluiu = Vendedores::where('id', $id)->delete();
+        $excluiu = Vendedores::find($id)->delete();
         if ($excluiu) {
             return $this->lista();
         }

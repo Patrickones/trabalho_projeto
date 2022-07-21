@@ -37,7 +37,7 @@ class CategoriasController extends Controller
     }
 
     public function delete($id) {
-        $excluiu = Categorias::where('id', $id)->delete();
+        $excluiu = Categorias::find($id)->delete();
         if ($excluiu) {
             return $this->lista();
         }

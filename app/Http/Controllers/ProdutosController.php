@@ -45,7 +45,7 @@ class ProdutosController extends Controller
     }
 
     public function delete($id) {
-        $excluiu = Produtos::where('id', $id)->delete();
+        $excluiu = Produtos::find($id)->delete();
         if ($excluiu) {
             return $this->lista();
         }

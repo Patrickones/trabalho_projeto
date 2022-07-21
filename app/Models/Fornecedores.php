@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use OwenIt\Auditing\Contracts\Auditable;
 
 
-class User extends Model implements Auditable
+class Fornecedores extends Model implements Auditable
 {
     use \OwenIt\Auditing\Auditable;
     use HasFactory;

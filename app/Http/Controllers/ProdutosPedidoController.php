@@ -37,7 +37,7 @@ class ProdutosPedidoController extends Controller
     }
 
     public function delete($id) {
-        $excluiu = Produtos_pedido::where('id', $id)->delete();
+        $excluiu = Produtos_pedido::find($id)->delete();
         if ($excluiu) {
             return $this->lista();
         }

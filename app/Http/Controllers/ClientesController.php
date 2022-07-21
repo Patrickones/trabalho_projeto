@@ -37,7 +37,7 @@ class ClientesController extends Controller
     }
 
     public function delete($id) {
-        $excluiu = clientes::where('id', $id)->delete();
+        $excluiu = clientes::find($id)->delete();
         if ($excluiu) {
             return $this->lista();
         }

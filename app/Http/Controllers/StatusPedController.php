@@ -37,7 +37,7 @@ class StatusPedController extends Controller
     }
 
     public function delete($id) {
-        $excluiu = StatusPed::where('id', $id)->delete();
+        $excluiu = StatusPed::find($id)->delete();
         if ($excluiu) {
             return $this->lista();
         }

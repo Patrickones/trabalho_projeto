@@ -37,7 +37,7 @@ class FornecedoresController extends Controller
     }
 
     public function delete($id) {
-        $excluiu = Fornecedores::where('id', $id)->delete();
+        $excluiu = Fornecedores::find($id)->delete();
         if ($excluiu) {
             return $this->lista();
         }

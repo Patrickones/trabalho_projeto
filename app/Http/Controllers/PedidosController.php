@@ -53,7 +53,7 @@ class PedidosController extends Controller
     }
 
     public function delete($id) {
-        $excluiu = Pedidos::where('id', $id)->delete();
+        $excluiu = Pedidos::find($id)->delete();
         if ($excluiu) {
             return $this->lista();
         }
